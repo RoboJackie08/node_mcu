@@ -1,0 +1,18 @@
+Mqtt using Mosquito:
+Install mosquitto
+
+Verify if it running using "sc query mosquitto"
+    We should see "STATE              : 4  RUNNING" which verifies it to be running
+
+To test locally, 
+
+start service   ->  In a CMD / Powershell, net start mosquitto
+stop service    ->  In a CMD / Powershell, net stop mosquitto
+
+Publish to a topic:
+    In a CMD / Powershell, mosquitto_pub -h localhost -t <TOPIC_NAME> -m "<MESSAGE>"
+    Example: mosquitto_pub -h localhost -t test/topic -m "Hello from Mosquitto"
+
+Subscribe to a Topic -> 
+    In a CMD / Powershell, mosquitto_sub -h localhost -t TOPIC_NAME -v
+    Example: mosquitto_sub -h localhost -t test/topic -v

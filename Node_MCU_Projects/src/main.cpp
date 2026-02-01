@@ -7,11 +7,11 @@ const char* ssid     = "Airtel_nand_2308";
 const char* password = "air51529";
 
 /* ---------- MQTT ---------- */
-const char* mqtt_server = "broker.hivemq.com";
+const char* mqtt_server = "192.168.1.8";
 const int   mqtt_port   = 1883;
 
 /* ---------- MQTT Topics ---------- */
-const char* sub_topic = "test/nodemcu/led";
+const char* sub_topic = "test/topic";
 const char* pub_topic = "test/nodemcu/status";
 
 /* ---------- Objects ---------- */
